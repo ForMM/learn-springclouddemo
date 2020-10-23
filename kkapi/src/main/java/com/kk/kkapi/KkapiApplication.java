@@ -1,5 +1,6 @@
 package com.kk.kkapi;
 
+import com.ctrip.framework.apollo.spring.annotation.EnableApolloConfig;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
@@ -15,6 +16,7 @@ import org.springframework.web.client.RestTemplate;
 @EnableFeignClients
 @EnableHystrix
 @EnableHystrixDashboard
+@EnableApolloConfig
 public class KkapiApplication {
 
     public static void main(String[] args) {

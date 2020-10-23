@@ -10,4 +10,10 @@ class KkapiApplicationTests {
     void contextLoads() {
     }
 
+    @Test
+    public void test(){
+        String aa="aaabbbccc";
+    }
+
+
 }
