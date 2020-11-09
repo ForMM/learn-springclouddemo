@@ -1,4 +1,4 @@
-package config;
+package com.kk.config;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
 

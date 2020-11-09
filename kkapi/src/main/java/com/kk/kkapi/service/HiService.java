@@ -1,5 +1,6 @@
 package com.kk.kkapi.service;
 
+import com.kk.kkapi.config.SpringBeanUtil;
 import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
@@ -9,8 +10,16 @@ import org.springframework.web.client.RestTemplate;
 @Service
 public class HiService {
 
-    @Autowired
-    private RestTemplate restTemplate;
+//    @Autowired
+    private static RestTemplate restTemplate;
+
+
+//    static {
+//        if(restTemplate ==null){
+//            restTemplate =  (RestTemplate)SpringBeanUtil.getBean("restTemplate");
+//        }
+//    }
+
 
     @Value("${account_url}")
     private String accountClientUrl;

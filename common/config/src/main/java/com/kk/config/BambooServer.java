@@ -1,4 +1,4 @@
-package config;
+package com.kk.config;
 
 /**
  * 需要被实例化的服务类
